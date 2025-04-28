@@ -19,7 +19,7 @@ string campus_select() {
     string selected_campus;
     int sel;
     string campus[8] = { "Metropolitan", "Fajardo", "Bayamon", "Arecibo", "Barranquita",
-                         "Ponce", "Guayama", "San German" };
+                         "Ponce", "Guayama", "San German"};
 
     do {
         cout << "Select Campus: \n";
