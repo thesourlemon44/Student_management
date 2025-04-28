@@ -5,7 +5,6 @@
 #include <string>
 #include <fstream> //Para guardar los datos
 #include <cstdlib> //Para numeros random (ID)
-#include <ctime> //Para el time 
 #include <set> //Para guardar los ID y que no se repitan
 #include <iomanip> 
 
@@ -191,8 +190,7 @@ int main()
         cout << "1- Add new students \n";
         cout << "2- Remove students \n";
         cout << "3- View records \n";
-        cout << "4- Search students \n";
-        cout << "5- Exit program \n";
+        cout << "4- Exit program \n";
         cout << "-------------------------------------------- \n";
         cout << "Enter option: ";
         cin >> opc_menu;
