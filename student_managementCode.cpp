@@ -199,8 +199,9 @@ int main()
         //Switch case para el menu
         switch (opc_menu) {
         case '1':
-            system("cls");
+            
             do { //Loop para que el usuario pueda ingresar mas estudiantes sin tener que volver al menu
+                system("cls");
                 cout << "=================================================================\n";
                 cout << "||                         NEW STUDENT                         ||\n";
                 cout << "=================================================================\n\n";
