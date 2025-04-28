@@ -8,29 +8,11 @@
 #include <ctime> //Para el time 
 #include <set> //Para guardar los ID y que no se repitan
 #include <iomanip> 
-#include <cctype> 
+
 
 using namespace std;
 
 set<string>save_id; //Guardar los IDs
-
-
-
-
-//aqui se asigna qué se va a buscar en el sistema
-void select(string target) {
-    ifstream MyFile("Record.txt");
-    string line;
-    while (getline(MyFile, line)) {
-        if (line.find(target) != string::npos) {
-            cout << line << endl;
-
-        }
-
-    }
-    MyFile.close();
-}
-
 
 //Para que el usuario seleccione (menos errores)
 string campus_select() {
@@ -162,14 +144,14 @@ void studentadd() {
     // Edit file
     MyFile << left;
     MyFile << "||" << setw(15) << studentID
-        << "||" << setw(15) << name
-        << "||" << setw(15) << apellido
-        << "||" << setw(15) << phone
-        << "||" << setw(25) << email
-        << "||" << setw(15) << major
-        << "||" << setw(15) << city
-        << "||" << setw(15) << recinto
-        << "||" << endl;
+           << "||" << setw(15) << name
+           << "||" << setw(15) << apellido
+           << "||" << setw(15) << phone
+           << "||" << setw(25) << email
+           << "||" << setw(15) << major
+           << "||" << setw(15) << city
+           << "||" << setw(15) << recinto
+           << "||" << endl;
 
     MyFile << setfill('=') << setw(148) << "=" << endl;
     MyFile.close();
